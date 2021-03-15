@@ -1,0 +1,191 @@
+#page4 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#p4goop {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+#bwGrad {
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.616), rgba(255, 255, 255, 0.308));
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -2;
+}
+#rights-granted-cont {
+    position: relative;
+    height: 26vh;
+    width: 100vw;
+}
+
+#rights-granted-cont h1 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 18vh;
+    left: 0;
+    right: 30vw;
+    text-align: right;
+}
+
+#locations-cont {
+    height: 26vh;
+    position: absolute;
+    left: 70vw;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.location-cont {
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 20%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 0.1s;
+}
+.location-cont:hover {
+    box-shadow: 0 0 20px white;
+    background-color: rgba(255, 255, 255, 0.096);
+    cursor: pointer;
+}
+
+.location-cont h4 {
+    position: relative;
+    color: white;
+    width: 100%;
+    font-size: 5vh;
+    font-family: "Mulish";
+
+}
+
+
+#holdsRightsAndLink {
+    position: relative;
+    /* border: 4px solid rgb(209, 31, 31); */
+    width: 100vw;
+    height: 74vh;
+    padding: 2vw;
+    display: flex;
+    flex-flow: space-evenly;
+}
+
+#aboutRights {
+    position: relative;
+    /* border: 2px solid blue; */
+    flex-grow: 2;
+}
+#aboutRightsBox {
+    border: 2px solid black;
+    border-radius: 3vw;
+    position: absolute;
+    left: 1vw;
+    right: 1vw;
+    top: 1vw;
+    bottom: 1vw;
+    background-color: rgba(255, 255, 255, 0.829);
+    font-family: "Mulish";
+}
+#legName {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 13vh;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+}
+#legName h2 {
+    font-size: 10vh;
+}
+#toggleSumRights {
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 10vh;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.SumRightsFormat {
+    font-size: 5vh;
+    color: rgb(0, 0, 0);
+    width: 30%;
+    height: 8vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+#summaryButt:hover, #rightsButt:hover {
+    box-shadow: 0 0 10px black;
+}
+
+#summaryText {
+    position: relative;
+    font-size: 2vw;
+    /* border: 1px solid black; */
+    margin: 1.5vw;
+}
+#rightsText {
+    position: relative;
+    font-size: 1.5vw;
+    /* border: 1px solid black; */
+    margin: 1.5vw;
+}
+#rightsText .SubPoint {
+    font-size: 1.2vw;
+    margin-left: 3vw;
+}
+
+#linkToRealThing {
+    position: relative;
+    /* border: 2px solid yellow; */
+    flex-grow: 1;
+}
+
+#linkToPdf {
+    border: 2px solid black;
+    border-radius: 3vw;
+    position: absolute;
+    left: 4vw;
+    right: 4vw;
+    top: 4vw;
+    bottom: 4vw;
+    background-color: rgba(255, 255, 255, 0.829);
+    font-family: "Mulish";
+    color: black;
+    text-decoration: none;
+    font-size: 10vh;
+    text-align: center;
+    animation: readFullAnimBounce 3s infinite;
+    transition: 0.3s;
+}
+@keyframes readFullAnimBounce {
+    50% {
+        box-shadow: 0 0 30px black;
+    }
+}
+#linkToPdf:hover {
+    background-color: rgba(255, 255, 255, 1);
+    animation: none;
+    box-shadow: 0 0 30px black;
+}
+#linkToPdf p {
+    margin: 10%;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' href='_css/general.css'>
+        <link rel='stylesheet' href='_css/page1.css'>
+        <link rel='stylesheet' href='_css/page2.css'>
+        <link rel='stylesheet' href='_css/page3.css'>
+        <link rel='stylesheet' href='_css/page4.css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id='page1'>
+            <div id="title-slogan">
+                <h1><span style='color:rgb(161, 255, 250)'><strong>Guarding</strong></span> Your Data</h1>
+                <div id="rect"></div>
+                <p class='slogan'>We know our <span style='color:rgb(161, 255, 250)'><strong>data</strong></span> is being used.</p>
+                <p class='slogan'>But what happens <span style='color:rgb(161,255,250)'><strong>after</strong></span>?</p>
+                <p id="credits">Created By: <span style='color:rgb(161, 255, 250);font-size:2.5vw;'><strong>Eric Huang</strong></span></p>
+            </div>
+            <canvas id="linesbetween"></canvas>
+            <div id="links">
+                <a href='#page2'>
+                    <div class='link' id='l1'>
+                        <p class="linktext">
+                            Introduction
+                        </p>
+                    </div>
+                </a>
+                <a href='#page3'>
+                    <div class='link' id='l2'>
+                        <p class="linktext">
+                            Injustice
+                        </p>
+                    </div>
+                </a>
+                <a href='#page4'>
+                    <div class='link' id='l3'>
+                        <p class="linktext">
+                            Rights
+                        </p>
+                    </div>
+                </a>
+                <a href='_html/about.html'>
+                    <div class='link' id='l4'>
+                        <p class="linktext">
+                            About
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <img id='waveimg' src='pics/wave.png'>
+            <img id='wavetopimg' src='pics/wavetop.png'>
+        </div>
+        <div id='page2'>
+            <div id='page2head'>
+                <h1>
+                    Introduction
+                </h1>
+                <div id="info2">
+                    <div id='infoCard' style='background-image: linear-gradient(70deg, rgba(29,255,195,0.1),rgba(0,212,255,0.1));'>
+                        <h2>Automated Decision Systems:</h2>
+                        <p>Transforms a set of inputs to outputs. Faciliates human decision making ("United States").</p>
+                    </div>
+                    <div id='infoCard' style='background-image: linear-gradient(70deg, rgba(255, 29, 29, 0.1),rgba(255, 238, 0, 0.1));'>
+                        <h2>Applications</h2>
+                        <p>Used when need to make many decisions where not possible for human to do so.
+                            For example: predicting crime or scheduling appointments (Larrazabal et al.) (Heaven).
+                        </p>
+                    </div>
+                    <div id='infoCard' style='background-image: linear-gradient(70deg, rgba(255, 29, 153, 0.1),rgba(9, 255, 0, 0.1));'>
+                        <h2>Data</h2>
+                        <p>Data is an integral part in creating ADS's. Need a lot of data to ensure the ADT
+                            knows what it is doing (Ng).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img id="elec" src='pics/elec.png'>
+            <img id='waveimg2' src='pics/wave.png'>
+        </div>
+        <div id='page3'>
+            <div id="bigInjustice">
+                <h1>
+                    Injustice
+                </h1>
+                <div id="redline"></div>
+            </div>
+            <div id="injusticeInfo">
+                <div class="injusticeSideInfo">
+                    <div class='injusticeSideCard'>
+                        <p id="injusticeLeftP" class="injusticePara">
+                            Past medical algorithm used on <span class='pulsingRedStats'>200 million</span> Americans was found by researchers to discriminate against African Americans (Ledford)<br><br>
+                            These medical algorithms can determine the health of <span class='pulsingRedStats'>entire communities</span> (Samorani et al.) <br><br>
+                            <span class='pulsingRedStats'>17.7%</span> of African American patients received extra care, compared to the significantly higher figure of <span class='pulsingRedStats'>46.5%</span> had it been unbiased (Ledford)
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="injusticeCenterInfo">
+                    <p class="injusticePara">
+                        You are probably familar with automated decision systems or some variant of the technology. <br><br>
+                        Of course, the idea of such process is easy to grasp.<br><br> But the consequences they bring may not
+                        be as well understood and recognized.
+                    </p>
+                </div>
+                <div class="injusticeSideInfo">
+                    <div class='injusticeSideCard'>
+                        <p id="injusticeRightR" class="injusticePara">
+                            <span class='pulsingRedStats'>Low income minority neighborhoods</span> impacted by predictive policing: different behavior in police officers > leads to <span class='pulsingRedStats'>agitation</span> in officers (Heaven) <br><br>
+                            “<span class='pulsingRedStats'>Inherently discriminatory</span>” as "decisions are made on the basis of subjects falling within so-defined groups” (B. Goodman and Flaxman).<br><br>                           
+                            Leads to <span class='pulsingRedStats'>cycles of discrimation</span>: data obtained by biased behavior from officers fed into models used by officers again (Heaven). 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='page4'>
+            <div id="rights-granted-cont">
+                <h1>
+                    Your Rights
+                </h1>
+                <div id="locations-cont">
+                    <div id="caButt" class='location-cont'>
+                        <h4>
+                            CA
+                        </h4>
+                    </div>
+                    <div id="euButt" class='location-cont'>
+                        <h4>
+                            EU
+                        </h4>
+                    </div>
+                    <div id="usButt" class='location-cont'>
+                        <h4>
+                            US
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div id='ccpa-info'>
+                <div id='holdsRightsAndLink'>
+                    <div id="aboutRights">
+                        <div id="aboutRightsBox">
+                            <div id="legName">
+                                <h2>
+                                    CCPA
+                                </h2>
+                            </div>
+                            <div id="toggleSumRights">
+                                <h2 id="summaryButt" class="SumRightsFormat">
+                                    Summary
+                                </h2>
+                                <h2 id="rightsButt" class="SumRightsFormat">
+                                    Rights
+                                </h2>
+                            </div>
+                            <div id="summaryText">
+                                The CCPA (California Consumer Privacy Act) is a data privacy law effective to all citizens in California and most entities that operate in CA. 
+                                It became effective Janurary 1st, 2020. ("California Consumer Privacy").
+                            </div>
+                            <div id="rightsText" style='display:none;'>
+                                <p class="MainPoint">CA citizens may request a copy of their data and information about their data. (999.301)(r)</p>
+                                <p class="SubPoint">➜ What data is being collected about myself? (999.301)(r)(1)</p>
+                                <p class="SubPoint">➜ Why is my data being collected? (999.301)(r)(6)</p>
+                                <p class="SubPoint">➜ Who will see my data? (999.301)(r)(5) </p>
+                                <p class="MainPoint">Allows you to:</p>
+                                <p class="SubPoint">➜ May request data holders to stop selling my personal data (999.306)</p>
+                                <p class="SubPoint">➜ May request data holders to remove personal data under certain conditions (Art. 3)</p>
+                                <p class="SubPoint">➜ Unfortunately no explicit mention of ADS as in GDPR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="linkToRealThing">
+                            <a id="linkToPdf" target="_blank" href="https://oag.ca.gov/sites/all/files/agweb/pdfs/privacy/oal-sub-final-text-of-regs.pdf?">
+                                <p>Read the Full Text</p>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div id='gdpr-info'>
+                <div id='holdsRightsAndLink'>
+                    <div id="aboutRights">
+                        <div id="aboutRightsBox">
+                            <div id="legName">
+                                <h2>
+                                    GDPR
+                                </h2>
+                            </div>
+                            <div id="toggleSumRights">
+                                <h2 id="summaryButt" class="SumRightsFormat">
+                                    Summary
+                                </h2>
+                                <h2 id="rightsButt" class="SumRightsFormat">
+                                    Rights
+                                </h2>
+                            </div>
+                            <div id="summaryText">
+                                The GDPR (General Data Protection Regulation) is a data privacy law effective to all citizens in the EU and most entities that operate in the EU. 
+                                It became effective May 25th, 2018 ("European Union").
+                            </div>
+                            <div id="rightsText" style='display:none;'>
+                                <p class="MainPoint">EU citizens may request a copy of their data and information about their data. (Art 15)(1)</p>
+                                <p class="SubPoint">➜ Is my data being used in Automated Decision Systems? (Art. 15)(1)(h)</p>
+                                <p class="SubPoint">➜ Who will see my data? (Art 15.)(1)(c) </p>
+                                <p class="MainPoint">Allows you to:</p>
+                                <p class="SubPoint">➜ Can direct data holder to modify the data so that it is accurate (Art. 16)</p>
+                                <p class="SubPoint">➜ May request data holders to remove personal data under certain conditions (Art. 17)</p>
+                                <p class="SubPoint">➜ Direct data holder to stop using their personal data in ADSs (Art. 21)(1)</p>
+                                <p class="SubPoint">➜ Request a human to evaluate a decision made by ADS (Art. 22)(1)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="linkToRealThing">
+                            <a id="linkToPdf" target="_blank" href="https://gdpr-info.eu/">
+                                <p>Read the Full Text</p>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div id='aaa-info'>
+                <div id='holdsRightsAndLink'>
+                    <div id="aboutRights">
+                        <div id="aboutRightsBox">
+                            <div id="legName">
+                                <h2>
+                                    AAA
+                                </h2>
+                            </div>
+                            <div id="toggleSumRights">
+                                <h2 id="summaryButt" class="SumRightsFormat">
+                                    Summary
+                                </h2>
+                                <h2 id="rightsButt" class="SumRightsFormat">
+                                    Powers
+                                </h2>
+                            </div>
+                            <div id="summaryText">
+                                The AAA (Algorithmic Accountability Act of 2019) is a House Bill proposed by Yvette Clarke of New York ("United States").
+                                It grants greater power to the Federal Trade Commission to audit ADS creators ("United States"). As of March 2021, this bill is still
+                                in committee ("United States").
+                            </div>
+                            <div id="rightsText" style='display:none;'>
+                                <p class="MainPoint">Allows FEC to conduct "Automated Decision System Impact Assessments" (Sec. 2)(2)</p>
+                                <p class="SubPoint">➜ Tests for “accuracy, fairness, bias, discrimination, privacy, and security” (Sec. 2)(2)</p>
+                                <p class="SubPoint">➜ Forces model makers to submit a review of their development process and information about their model (Sec. 2)(2)</p>
+                                <p class="MainPoint">Why is this important?</p>
+                                <p class="SubPoint">➜ Difficult to uphold current laws when unable to gain access to often proprietary models (R. Goodman)</p>
+                                <p class="SubPoint">➜ This bill is extremely important, so call your representative about this legislation!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="linkToRealThing">
+                            <a id="linkToPdf" target="_blank" href="https://www.congress.gov/bill/116th-congress/house-bill/2231/text">
+                                <p>Read the Full Text</p>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <img id='p4goop' src='pics/goop.png'>
+            <div id='bwGrad'></div>
+        </div>
+        <a id="scrollUp" href='#page1'>
+            <p>
+                Scroll Up 
+            </p>
+        </a>
+        <script src='_js/frontAnim.js'></script>
+        <script src='_js/pagedynamics.js'></script>
+        <script src='_js/page4.js'></script>
+    </body>
+</html>
